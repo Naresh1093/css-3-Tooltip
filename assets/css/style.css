@@ -1,0 +1,31 @@
+.fa-square-youtube{
+    color:firebrick;
+    transition:1s;
+}
+.fa-square-youtube:hover{
+    color:rgb(75,125,176);
+}
+.toolTip{
+    position:relative;
+}
+.toolTip>span{
+    background:radial-gradient(circle,#119983,#28ef7d);
+    padding:20px;
+    border-radius:5px;
+    box-shadow:0px 6px 8px #ccc;
+    position:absolute;
+    top:50px;
+    left:150px;
+    display:none;
+}
+.toolTip:hover span{
+    display:block;
+}
+.toolTip>span::before{
+    content: "";
+    border:10px;
+    border-color: transparent #38ef7d transparent transparent;
+    border-style: solid;
+    position: absolute;
+    left: -20px;
+}
